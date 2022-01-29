@@ -1,0 +1,457 @@
+  /* ################# Desktop ##############################*/
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700);
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+strong {
+  font-weight: 700;
+}
+em,
+i {
+  font-style: italic;
+}
+img,
+ul {
+  margin: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+td,
+th,
+tr {
+  vertical-align: top;
+}
+/* article,
+aside,
+figure,
+footer,
+header,        The deafult is display block I think, so you probably don't need this. 
+main,
+menu,
+nav,
+section {
+  display: block;
+}  */  
+a {
+  color: inherit;
+}
+[src*=".svg"] {
+  width: 100%;
+}
+[class*="svg-"] use {
+  pointer-events: none;
+}
+span[class*="svg-"] {
+  display: inline-block;
+}
+.link,
+a {
+  outline: 0;
+}
+.link,
+.link:link,
+.link:visited,
+a,
+a:link,
+a:visited {
+  cursor: pointer;
+  text-decoration: none;
+}
+.link.notClickable,
+a.notClickable {
+  cursor: default;
+}
+.link._inherit-color,
+a._inherit-color {
+  color: inherit;
+}
+._link-underlined .link:hover,
+._link-underlined a:hover,
+.link._link-underlined:hover,
+.link._underlined-always,
+a._link-underlined:hover,
+a._underlined-always,
+p .link:hover,
+p a:hover {
+  text-decoration: underline;
+}
+.title-h0,
+.title-h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.title-h1 {
+  font-size: 28px;
+}
+.title-h2,
+.title-h3 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+.title-h3 {
+  font-size: 20px;
+}
+.text-p1,
+.text-p2 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.text-p2 {
+  font-size: 14px;
+}
+.text-s1,
+.text-s2 {
+  font-size: 12px;
+  line-height: 1.2;
+}
+.text-s2 {
+  font-size: 9px;
+}
+[class*="svg-"] svg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body,
+html {
+  font-family: Roboto;
+}
+.container-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 26px;
+}
+.burger-container {
+  display: none;
+}
+
+/*.header__nav {
+  padding: 35px 180px;  You don't need this as I used flex to postion it
+} */
+
+nav.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 70%;       /* I added all this */
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    height: 106px; /* Your header didn't have any height this was causing issues */
+}
+
+.header-menu {
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  /* line-height: 22px;
+  padding: 17px 0;  Don't need this as I used flex
+  */
+}
+.header-menu-item {
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.main__img {
+  align-items: center;
+}
+.our_recent_posts {
+  margin: 56px 0 69px;
+}
+.main_title.posts,
+.main_title.small-text {
+  padding: 0;
+}
+.main_title {
+  color: #4e4e4e;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 47px 0 24px;
+  text-transform: uppercase;
+}
+.posts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.posts__content {
+  align-items: center;
+  display: flex;
+  max-width: 555px;
+  padding-top: 32px;
+}
+.posts_text {
+    padding-left: 21px;
+  }
+.text-center {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.small-text {
+  text-transform: capitalize;
+}
+.indent-text {
+  padding-top: 5px;
+}
+.text-bottom {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.instagram_title {
+  display: flex;
+  justify-content: space-between;
+}
+.instagram_shots {
+  background-color: #f5f5f5;
+  padding-bottom: 49px;
+}
+.instagram_posts {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.img_post {
+  padding-left: 10px;
+}
+
+.img_post:first-child {
+  padding-left: 0;
+}
+.text_size_small {
+  font-size: 13px;
+}
+.footer {
+  background-color: #000;
+  padding: 70px 0;
+  text-align: center;
+}
+.footer_title {
+  color: #fefefe;
+  padding-bottom: 22px;
+  text-transform: uppercase;
+}
+.footer_text {
+  color: #b9b9b9;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer_networks {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  padding: 25px 0;
+}
+.social_network {
+  width: 34px;
+}
+[class*="svg-"] {
+  font-size: 20px;
+  position: relative;
+}
+[class*="svg-"]:before {
+  content: "";
+  display: block;
+}
+.svg-main-dribbble,
+.svg-main-facebook,
+.svg-main-pinterest,
+.svg-main-rss,
+.svg-main-twitter {
+  width: 1.7em;
+}
+.svg-main-dribbble:before,
+.svg-main-facebook:before,
+.svg-main-pinterest:before,
+.svg-main-rss:before,
+.svg-main-twitter:before {
+  padding-bottom: 100%;
+}
+.g-header {
+  background-color: #fed700;
+  box-sizing: border-box;
+  padding: 12px 0;
+}
+.header__wrap {
+  align-items: center;
+  display: flex;
+}
+.header__logo .logo {
+  margin-right: 16px;
+}
+.header__logo .logo-wrap {
+  align-items: center;
+  color: #1a1a1a;
+  display: flex;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.header__navigation .navigation__list {
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+.header__navigation .list__item {
+  width: 24px;
+}
+.header__navigation .list__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+
+@media (max-width: 1233px) {
+    /* .header-menu {
+      padding: 40px 100px;  You don't need this now that your nav/burger menu have a height value
+    } */ 
+    .img_car {
+        display: none;
+      }
+  }
+
+
+  /* ################# laptops 1200px ##############################*/
+
+  @media (max-width: 995px) {
+    nav.header__nav{
+          display: none; /* ADDED THIS - This was the main issue - your desktop NAV was this there*/
+      }
+
+    
+    .header-menu {
+      background-color: #f5f5f5;
+      display: block;
+      opacity: 0;
+      padding: 0;
+      position: absolute;
+      right: 15px;
+      top: 50px;
+      transition: 0.3s;
+      width: 180px;
+    }
+    .header-menu.active {
+      opacity: 1;
+    }
+    .header-menu-item {
+      padding: 5px 0 5px 15px;
+    }
+    .burger-container {
+        display: flex;
+    position: relative;
+    /* right: 2px; */
+    /* top: 33px;  I changed most of this one */
+    /* transform: translate(-50%, -50%); */
+    height: 83px /* I added height to the burger menu too */;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 23px;
+    }
+    .img_wire {
+        display: none;
+      }
+      .burger-menu{
+        position: relative;
+        width: 44px;
+        height: 37px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.9s ease-in-out 0s;
+    }
+    .burger-menu:hover{
+        cursor: pointer;
+    }
+    .burger-menu:hover i{
+        display: none;
+      }
+    .burger-menu:hover span:after{
+        color: #fff;
+        content: '\2573';
+        font-weight: 900;
+    }
+    .burger-menu__dropdown{
+        position: absolute;
+        width: 182px;
+        left: -138px;
+        top: 37px;
+        background: #F5F5F5;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.2s ease-in;
+        transition: max-height 0.2s ease-in;
+    }
+    .burger-menu__dropdown .active{
+        color: #57A4A4;
+    }
+    .burger-menu__dropdown div{
+        font-size: 11px;
+        color: #4E4E4E;
+        text-transform: uppercase;
+        height: 32px;
+        padding-left: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .burger-menu:hover .burger-menu__dropdown {
+        max-height: 280px;
+    }
+    .burger-menu__dropdown div:hover{
+        background-color: #E5E5E5;
+    }
+  }
+
+  /* ################# table 768px ##############################*/
+
+  @media screen and (max-width: 768px) {
+    .posts_text {
+      padding: 15px 0;
+    }
+    .posts__wrapper {
+        display: block;
+      }
+      .posts__content {
+        display: block;
+      }
+      .text_size_small {
+          display: none;
+        }
+        .text-bottom {
+          display: none;
+        }
+        .img_hand {
+            display: none;
+          }
+          .img_bycilce {
+            width: 100%;
+          }
+  }
+
+/* ################# table mobile 320px ##############################*/
+
+  @media only screen and (max-width: 320px) and (min-width: 0px) {
+        .exmaple{
+            border: 1px solid black;
+        }
+  }
